@@ -14,16 +14,11 @@ setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 ***********************************************************************/
 
 function setKeyInObject(obj, string, value) {
-//let res = {obj[string] = value]}
-//console.log(res)
-//obj.string = value ;
-for (let key in obj){
-let obj2[key] = string;
-let obj2[value] = value;
-
+    //let obj ={}
+ obj[string] = value;
+return obj;
 }
-//return obj2;
-}
-
+//let obj = {}
+console.log(setKeyInObject(obj, "apple", "yum")); // => {apple: "yum"}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = setKeyInObject;
